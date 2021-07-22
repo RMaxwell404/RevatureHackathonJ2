@@ -1,10 +1,16 @@
 package com.revature.controller;
 
+import com.revature.models.CharModel;
 import com.revature.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
+//@RequestMapping("/api")
+@CrossOrigin(origins="*", allowedHeaders = "*", allowCredentials = "true")
 public class CharacterController {
 
     private final CharacterService characterService;
@@ -23,4 +29,9 @@ public class CharacterController {
 //            }
 //        }
 //    }
+    @GetMapping("/character")
+    public ResponseEntity<?> getSingleCharacter() {
+        System.out.println("this hit ");
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
 }
