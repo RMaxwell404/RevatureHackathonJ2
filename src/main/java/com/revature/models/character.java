@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Characters")
-public class character {
+public class Character {
 
 
     @Id
@@ -36,7 +36,7 @@ public class character {
     //Big and long!
     private String description;
 
-    public character(String owner) {
+    public Character(String owner) {
         this.owner = owner;
     }
 
