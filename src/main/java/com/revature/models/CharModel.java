@@ -8,8 +8,8 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "Characters")
-public class CharModel {
 
+public class CharModel {
 
     @Id
     private int id;
