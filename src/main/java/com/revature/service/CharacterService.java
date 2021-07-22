@@ -1,7 +1,7 @@
 package com.revature.service;
 
-import com.revature.models.Character;
+import com.revature.models.CharModel;
 
 public interface CharacterService {
-    Character updateCharacter(Character character);
+    CharModel updateCharacter(CharModel charModel);
 }
