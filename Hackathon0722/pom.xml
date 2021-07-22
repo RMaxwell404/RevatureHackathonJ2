@@ -9,11 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.revature</groupId>
-	<artifactId>Java2CharacterCreator</artifactId>
+	<artifactId>Hackathon0722</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>Java2CharacterCreator</name>
-	<description>Revature hackathon charModel creator</description>
+	<name>Hackathon0722</name>
+	<description>For Hackathon 07/22</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -67,6 +66,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

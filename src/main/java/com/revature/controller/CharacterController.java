@@ -9,16 +9,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequestMapping("/api")
-@CrossOrigin(origins="*", allowedHeaders = "*", allowCredentials = "true")
+//@RequestMapping("/api/character")
+//@CrossOrigin(origins="*", allowedHeaders = "*", allowCredentials = "true")
 public class CharacterController {
 
-    private final CharacterService characterService;
-
-    @Autowired
-    public CharacterController(CharacterService characterService) {
-        this.characterService = characterService;
-    }
+//    private final CharacterService characterService;
+//
+//    @Autowired
+//    public CharacterController(CharacterService characterService) {
+//        this.characterService = characterService;
+//    }
 
 //    @PutMapping("character"){
 //        public ResponseEntity<Object> updateCharacter(@RequestBody CharModel character) {
@@ -29,9 +29,18 @@ public class CharacterController {
 //            }
 //        }
 //    }
-    @GetMapping("/character")
-    public ResponseEntity<?> getSingleCharacter() {
+    @GetMapping("/{id}")
+    public void getSingleCharacter() {
         System.out.println("this hit ");
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        //return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
+
+    @PutMapping("/{id}")
+    public void updateCharacter() {
+
+    }
+    @PutMapping("/{id}/description")
+    public void updateCharacterDescription() {
+
     }
 }
