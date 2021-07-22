@@ -15,7 +15,7 @@
 	<name>Java2CharacterCreator</name>
 	<description>Revature hackathon charModel creator</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
