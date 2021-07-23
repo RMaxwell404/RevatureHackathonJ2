@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/character")
+@CrossOrigin(origins="http://localhost:4200", allowedHeaders = "*", allowCredentials = "true")
 public class ControllerImpl implements Controller{
 
     private CharacterService service;
