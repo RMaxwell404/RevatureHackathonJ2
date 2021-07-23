@@ -1,8 +1,6 @@
 package com.revature.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.awt.*;
 import java.util.Objects;
 
@@ -12,6 +10,7 @@ import java.util.Objects;
 public class CharModel {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     //Who owns me?

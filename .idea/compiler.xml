@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Java2CharacterCreator" target="11" />
+      <module name="Java2CharacterCreator" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
