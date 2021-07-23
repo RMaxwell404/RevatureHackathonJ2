@@ -1,8 +1,11 @@
 package com.revature.models;
+import java.awt.Color;
 
-import javax.persistence.*;
-import java.awt.*;
-import java.util.Objects;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "Characters")
@@ -10,7 +13,7 @@ import java.util.Objects;
 public class CharModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     //Who owns me?
@@ -135,4 +138,28 @@ public class CharModel {
     public void setDescription(String description) {
         this.description = description;
     }
+
+	public CharModel(int id, String owner, String name, int strength, int dexterity, int intelligence, int wisdom,
+			int numOfToes, int luck, Color eyeColor, String gender, String race, String description) {
+		super();
+		this.id = id;
+		this.owner = owner;
+		this.name = name;
+		this.strength = strength;
+		this.dexterity = dexterity;
+		this.intelligence = intelligence;
+		this.wisdom = wisdom;
+		this.numOfToes = numOfToes;
+		this.luck = luck;
+		this.eyeColor = eyeColor;
+		this.gender = gender;
+		this.race = race;
+		this.description = description;
+	}
+
+	public CharModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 }
